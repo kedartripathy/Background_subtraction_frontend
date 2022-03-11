@@ -5,7 +5,7 @@ import React from 'react';
 const decodeFileBase64 = (base64String) => {
   // From Bytestream to Percent-encoding to Original string
 
-  return "data:image/png;base64," + base64string
+  return "data:image/png;base64," + base64String
 
 //  return decodeURIComponent(
 //    atob(base64String).split("").map(function (c) {
