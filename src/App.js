@@ -100,8 +100,10 @@ function App() {
   return (
     <div className="App">
       <div className="Input">
-        <h1>Upload input image:</h1>
-        <h2>Maximum file size: 3MB</h2>
+        <h1>Image Background Subtraction using a Machine Learning Model</h1>
+        <h2>By: Kedar Tripathy</h2>
+        <h3>Upload input image:</h3>
+        <h4>Maximum file size: 3MB</h4>
         <form onSubmit={handleSubmit}>
           <input type="file" accept=".png" onChange={handleChange} />
           <button type="submit" disabled={buttonDisable}>{buttonText}</button>
@@ -109,7 +111,7 @@ function App() {
       </div>
       <div className="Output">
         <h1>Results</h1>
-        <img src={outputFileData} alt="Image with background subtracted" height="200" width="200" />
+        <img src={outputFileData} alt="" height="500" width="500" />
       </div>
     </div>
   );
