@@ -102,8 +102,7 @@ function App() {
       <div className="Input">
         <h1>Image Background Subtraction using a Machine Learning Model</h1>
         <h2>By: Kedar Tripathy</h2>
-        <p>This web app uses a Machine Learning model to return your profile picture</p>
-        <p>with the background subtracted</p>
+        <p>This web app uses a Machine Learning model to return your profile picture with the background subtracted</p>
         <h3>Upload input image (max 3MB):</h3>
         <form onSubmit={handleSubmit}>
           <input type="file" accept=".png" onChange={handleChange} />
