@@ -102,6 +102,7 @@ function App() {
       <div className="Input">
         <h1>Upload input image:</h1>
         <h2>Maximum file size: 3MB</h2>
+        <p style="text-align: center;">Use your own profile photo or use one of the demo images provided</p>
         <form onSubmit={handleSubmit}>
           <input type="file" accept=".png" onChange={handleChange} />
           <button type="submit" disabled={buttonDisable}>{buttonText}</button>
@@ -109,7 +110,7 @@ function App() {
       </div>
       <div className="Output">
         <h1>Results</h1>
-        <img src={outputFileData} alt="" />
+        <img src={outputFileData} alt="Image with background subtracted" height="200" width="200" />
       </div>
     </div>
   );
