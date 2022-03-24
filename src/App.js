@@ -102,8 +102,8 @@ function App() {
       <div className="Input">
         <h1>Image Background Subtraction using a Machine Learning Model</h1>
         <h2>By: Kedar Tripathy</h2>
-        <p style="text-align: center;">text</p>
         <h3>Upload input image (max 3MB):</h3>
+        <p style="text-align: center;">text</p>
         <form onSubmit={handleSubmit}>
           <input type="file" accept=".png" onChange={handleChange} />
           <button type="submit" disabled={buttonDisable}>{buttonText}</button>
