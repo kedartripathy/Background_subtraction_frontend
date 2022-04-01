@@ -1,9 +1,9 @@
-.Header {
-  text-align: center;
-}
-
 .App {
   justify-content: center;
+}
+
+.Header {
+  text-align: center;
 }
 
 .Content{
@@ -15,7 +15,6 @@
   margin: 16px;
   width: 300px;
   text-align: center;
-  justify-content: center;
 }
 
 .Input input[type=file] {
