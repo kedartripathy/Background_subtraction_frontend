@@ -184,7 +184,7 @@ function App() {
 
       <div className='Content'>
         <div className="Input">
-          <h1>Input: </h1>
+          <h2>Input</h2>
           <label htmlFor="demo-dropdown">Choose a demo image: </label>
           <select name="Select Image" id="demo-dropdown" value={selectedDropdownFile} onChange={handleDropdown}>
               <option value="">-- Select Demo File --</option>
@@ -200,12 +200,13 @@ function App() {
         </div>
 
         <div className="Output">
-          <h1>Model Output</h1>
+          <h2>Model Output</h2>
+          <p>Black: Background, White: Foreground</p>
           <img src={ModeloutputFileData} alt="" />
         </div>
 
         <div className="Output">
-          <h1>Results</h1>
+          <h2>Results</h2>
           <img src={outputFileData} alt="" />
         </div>
 
