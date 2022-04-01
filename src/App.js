@@ -23,6 +23,7 @@ const decodeFileBase64 = (base64String) => {
 function App() {
   const [inputFileData, setInputFileData] = React.useState(''); // represented as bytes data (string)
   const [outputFileData, setOutputFileData] = React.useState(''); // represented as readable data (text string)
+  const [ModeloutputFileData, setModelOutputFileData] = React.useState('');
   const [inputImage, setInputImage] = React.useState(''); // represented as bytes data (string)
   const [buttonDisable, setButtonDisable] = React.useState(true);
   const [submitButtonText, setSubmitButtonText] = React.useState('Submit');
