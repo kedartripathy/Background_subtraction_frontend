@@ -57,6 +57,16 @@
   margin-top: 16px;
 }
 
+.Output {
+  margin: 16px;
+  width: 300px;
+  text-align: center;
+}
+
+.Output input[type=file] {
+  display: none;
+}
+
 .Output img{
   width: 100%;
   height: auto;
