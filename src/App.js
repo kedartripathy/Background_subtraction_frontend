@@ -177,23 +177,26 @@ function App() {
         <h2>By: Kedar Tripathy</h2>
         <p>This web app uses a Machine Learning model to return your profile picture with the background subtracted</p>
       </div>
-      <div className="Input">
-        <h3>Upload input image (max 3MB):</h3>
-        <label htmlFor="demo-dropdown">Or use a demo image: </label>
-        <select name="Select Image" id="demo-dropdown" value={selectedDropdownFile} onChange={handleDropdown}>
-            <option value="">-- Select Demo File --</option>
-            {demoDropdownFiles.map((file) => <option key={file} value={file}>{file}</option>)}
-        </select>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="file-upload">{fileButtonText}</label>
-          <input type="file" id="file-upload" onChange={handleChange} />
-          <button type="submit" disabled={buttonDisable}>{submitButtonText}</button>
-        </form>
-        <img src={inputImage} alt="" />
-      </div>
-      <div className="Output">
-        <h3>Results</h3>
-        <img src={outputFileData} alt="" />
+
+      <div className='Content'>
+        <div className="Input">
+          <h3>Upload input image (max 3MB):</h3>
+          <label htmlFor="demo-dropdown">Or use a demo image: </label>
+          <select name="Select Image" id="demo-dropdown" value={selectedDropdownFile} onChange={handleDropdown}>
+              <option value="">-- Select Demo File --</option>
+              {demoDropdownFiles.map((file) => <option key={file} value={file}>{file}</option>)}
+          </select>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="file-upload">{fileButtonText}</label>
+            <input type="file" id="file-upload" onChange={handleChange} />
+           <button type="submit" disabled={buttonDisable}>{submitButtonText}</button>
+          </form>
+          <img src={inputImage} alt="" />
+        </div>
+        <div className="Output">
+          <h3>Results</h3>
+          <img src={outputFileData} alt="" />
+        </div>
       </div>
     </div>
   );
