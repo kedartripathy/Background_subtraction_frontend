@@ -64,7 +64,7 @@
 
 .Output {
   margin: 16px;
-  width: 500px;
+  width: 300px;
   text-align: center;
 }
 
@@ -78,6 +78,6 @@
   margin-top: 16px;
 }
 
-.Output h3 {
+.Output h1 {
   text-align: center;
 }

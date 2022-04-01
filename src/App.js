@@ -120,6 +120,8 @@ function App() {
       else {
         const outputBytesData = JSON.parse(data.body)['outputResultsData'];
         setOutputFileData(decodeFileBase64(outputBytesData));
+        const modeloutputBytesData = JSON.parse(data.body)['modeloutputResultsData'];
+        setModelOutputFileData(decodeFileBase64(modeloutputBytesData));
       }
 
       // re-enable submit button
@@ -181,7 +183,7 @@ function App() {
 
       <div className='Content'>
         <div className="Input">
-          <h3>Input: </h3>
+          <h1>Input: </h1>
           <label htmlFor="demo-dropdown">Choose a demo image: </label>
           <select name="Select Image" id="demo-dropdown" value={selectedDropdownFile} onChange={handleDropdown}>
               <option value="">-- Select Demo File --</option>
@@ -197,7 +199,12 @@ function App() {
         </div>
 
         <div className="Output">
-          <h3>Results</h3>
+          <h1>Model Output</h1>
+          <img src={ModeloutputFileData} alt="" />
+        </div>
+
+        <div className="Output">
+          <h1>Results</h1>
           <img src={outputFileData} alt="" />
         </div>
 
