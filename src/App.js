@@ -172,9 +172,11 @@ function App() {
 
   return (
     <div className="App">
+      <div className="Header">
         <h1>Image Background Subtraction using a Machine Learning Model</h1>
         <h2>By: Kedar Tripathy</h2>
         <p>This web app uses a Machine Learning model to return your profile picture with the background subtracted</p>
+      </div>
       <div className="Input">
         <h3>Upload input image (max 3MB):</h3>
         <label htmlFor="demo-dropdown">Demo: </label>
