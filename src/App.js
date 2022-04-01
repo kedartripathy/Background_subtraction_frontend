@@ -179,7 +179,7 @@ function App() {
       </div>
       <div className="Input">
         <h3>Upload input image (max 3MB):</h3>
-        <label htmlFor="demo-dropdown">Demo: </label>
+        <label htmlFor="demo-dropdown">Or use a demo image: </label>
         <select name="Select Image" id="demo-dropdown" value={selectedDropdownFile} onChange={handleDropdown}>
             <option value="">-- Select Demo File --</option>
             {demoDropdownFiles.map((file) => <option key={file} value={file}>{file}</option>)}
@@ -192,7 +192,7 @@ function App() {
         <img src={inputImage} alt="" />
       </div>
       <div className="Output">
-        <h1>Results</h1>
+        <h3>Results</h3>
         <img src={outputFileData} alt="" />
       </div>
     </div>
