@@ -180,17 +180,18 @@ function App() {
 
       <div className='Content'>
         <div className="Input">
-          <h3>Upload input image (max 3MB):</h3>
+          <h3>Input: </h3>
+          <label htmlFor="demo-dropdown">Choose a demo image: </label>
+          <select name="Select Image" id="demo-dropdown" value={selectedDropdownFile} onChange={handleDropdown}>
+              <option value="">-- Select Demo File --</option>
+              {demoDropdownFiles.map((file) => <option key={file} value={file}>{file}</option>)}
+          </select>
+          <p>Or upload your own (max 3MB):</p>
           <form onSubmit={handleSubmit}>
             <label htmlFor="file-upload">{fileButtonText}</label>
             <input type="file" id="file-upload" onChange={handleChange} />
            <button type="submit" disabled={buttonDisable}>{submitButtonText}</button>
           </form>
-          <label htmlFor="demo-dropdown">Or use a demo image: </label>
-          <select name="Select Image" id="demo-dropdown" value={selectedDropdownFile} onChange={handleDropdown}>
-              <option value="">-- Select Demo File --</option>
-              {demoDropdownFiles.map((file) => <option key={file} value={file}>{file}</option>)}
-          </select>
           <img src={inputImage} alt="" />
         </div>
         <div className="Output">
