@@ -1,4 +1,6 @@
 .App {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -7,8 +9,8 @@
 }
 
 .Content{
-  justify-content: center;
   display: flex;
+  justify-content: center;
 }
 
 .Input {
