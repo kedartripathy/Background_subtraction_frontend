@@ -57,9 +57,10 @@
   margin-top: 16px;
 }
 
-.Output {
-  margin: 16px;
-  width: 500px;
+.Output img{
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
 }
 
 .Output h1 {
