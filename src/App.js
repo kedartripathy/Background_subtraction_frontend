@@ -172,8 +172,11 @@ function App() {
 
   return (
     <div className="App">
+        <h1>Image Background Subtraction using a Machine Learning Model</h1>
+        <h2>By: Kedar Tripathy</h2>
+        <p>This web app uses a Machine Learning model to return your profile picture with the background subtracted</p>
       <div className="Input">
-        <h1>Input</h1>
+        <h3>Upload input image (max 3MB):</h3>
         <label htmlFor="demo-dropdown">Demo: </label>
         <select name="Select Image" id="demo-dropdown" value={selectedDropdownFile} onChange={handleDropdown}>
             <option value="">-- Select Demo File --</option>
@@ -188,7 +191,7 @@ function App() {
       </div>
       <div className="Output">
         <h1>Results</h1>
-        <img src={outputFileData} height="500" width="500" />
+        <img src={outputFileData} alt="" />
       </div>
     </div>
   );
