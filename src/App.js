@@ -200,7 +200,6 @@ function App() {
       <div className='Content'>
         <div className="Output">
           <h2>Input Image</h2>
-          <p>  </p>
           <img src={inputImage} alt="" />
         </div>
 
@@ -212,7 +211,6 @@ function App() {
 
         <div className="Output">
           <h2>Results</h2>
-          <p>  </p>
           <img src={outputFileData} alt="" />
         </div>
 
