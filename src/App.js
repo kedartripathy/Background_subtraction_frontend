@@ -175,6 +175,7 @@ function App() {
       <div className="Header">
         <h1>Image Background Subtraction using a Machine Learning Model</h1>
         <h2>By: Kedar Tripathy</h2>
+        <a href="https://www.kedartripathy.com/" target="_blank" rel="external" hreflang="en" type="text/html">My Website</a>
         <p>This web app uses a Machine Learning model to return your profile picture with the background subtracted</p>
       </div>
 
@@ -194,10 +195,12 @@ function App() {
           </form>
           <img src={inputImage} alt="" />
         </div>
+
         <div className="Output">
           <h3>Results</h3>
           <img src={outputFileData} alt="" />
         </div>
+
       </div>
     </div>
   );
