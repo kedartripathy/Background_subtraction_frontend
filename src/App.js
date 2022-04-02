@@ -206,7 +206,6 @@ function App() {
 
         <div className="Output">
           <h2>Model Output</h2>
-          <p>Black: Background, White: Foreground</p>
           <img src={ModeloutputFileData} alt="" />
         </div>
 
