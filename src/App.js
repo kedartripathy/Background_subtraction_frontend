@@ -182,7 +182,9 @@ function App() {
         <p>This web app uses a Machine Learning model to return your profile picture with the background subtracted</p>
       </div>
 
-      <div className="Input">
+      <div className='Content'>
+
+        <div className="Input">
           <h2>Image Upload</h2>
           <label htmlFor="demo-dropdown">Choose a demo image: </label>
           <select name="Select Image" id="demo-dropdown" value={selectedDropdownFile} onChange={handleDropdown}>
@@ -195,9 +197,8 @@ function App() {
             <input type="file" id="file-upload" onChange={handleChange} />
            <button type="submit" disabled={buttonDisable}>{submitButtonText}</button>
           </form>
-      </div>
+        </div>
 
-      <div className='Content'>
         <div className="Output">
           <h2>Input Image</h2>
           <img src={inputImage} alt="" />
