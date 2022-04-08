@@ -6,6 +6,15 @@
   text-align: center;
 }
 
+.Links {
+  display: inline-block;
+}
+
+.Links a {
+  margin: 4px;
+  }
+  
+
 .Content{
   display: flex;
   justify-content: center;
