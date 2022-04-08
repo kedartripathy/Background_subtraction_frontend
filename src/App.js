@@ -201,12 +201,12 @@ function App() {
 
         <div className="Output">
           <h2>Input Image</h2>
-          <p>Black: Background, White: Foreground</p>
           <img src={inputImage} alt="" />
         </div>
 
         <div className="Output">
           <h2>Model Output</h2>
+          <p>Black: Background, White: Foreground</p>
           <img src={ModeloutputFileData} alt="" />
         </div>
 
