@@ -201,6 +201,7 @@ function App() {
 
         <div className="Output">
           <h2>Input Image</h2>
+          <p>Black: Background, White: Foreground</p>
           <img src={inputImage} alt="" />
         </div>
 
