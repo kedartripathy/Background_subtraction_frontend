@@ -179,7 +179,7 @@ function App() {
         <h1>Image Background Subtraction using a Machine Learning Model</h1>
         <h2>By: Kedar Tripathy</h2>
         <div className='Links'>
-          <a href="https://www.kedartripathy.com/" target="_blank" rel="external" hreflang="en" type="text/html">My Website</a> <a href="https://docs.google.com/document/d/1a7w9JMokycqtqM3WDunzLKSwccVHdWyCjHUgyma-40I/edit?usp=sharing" target="_blank" rel="external" hreflang="en" type="text/html">Project Report</a> 
+          <a href="https://www.kedartripathy.com/" target="_blank" rel="external" hreflang="en" type="text/html">My Website</a> <a href="https://drive.google.com/file/d/1O3LjZCndIY9rb5VHWbowA7YUeiByRE6L/view?usp=sharing" target="_blank" rel="external" hreflang="en" type="text/html">Project Report</a> 
         </div>
         <p>This web app uses a Machine Learning model to return your profile picture with the background subtracted by predicting which pixels belong to the foreground.</p>
       </div>
